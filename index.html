@@ -1,90 +1,782 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aqib Tariq | Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        body { background-color: #f8f9fa; color: #333; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        .hero { background: linear-gradient(135deg, #0d6efd, #0b5ed7); color: white; padding: 100px 0; text-align: center; }
-        .card { border: none; box-shadow: 0 4px 15px rgba(0,0,0,0.05); transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); }
-        .badge-skill { background-color: #e9ecef; color: #495057; font-size: 1rem; padding: 10px 15px; margin: 5px; border-radius: 30px; display: inline-block; font-weight: 500; }
-        footer { background-color: #212529; color: #fff; padding: 30px 0; margin-top: 60px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium Software Developer & Freelancer Portfolio">
+  <title>Alex Chen | Software Developer & Freelancer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="hero">
-        <div class="container">
-            <h1 class="display-4 fw-bold">Aqib Tariq</h1>
-            <p class="lead fs-4 opacity-75">Web Developer & Graphic Designer</p>
-            <p class="mx-auto" style="max-width: 600px;">Specializing in WordPress, Elementor, React, and UI/UX Design. Creating custom web ecosystems and professional e-commerce store setups.</p>
-            <a href="#contact" class="btn btn-light btn-lg mt-3 fw-bold px-4">Let's Work Together</a>
-        </div>
+<!-- ============================================
+     NAVIGATION
+     ============================================ -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <a href="#" class="logo">Alex<span class="logo-dot"></span>Chen</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </div>
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================================
+     HERO SECTION
+     ============================================ -->
+<section class="hero" id="home">
+  <div class="hero-bg-animated">
+    <div class="orb"></div>
+    <div class="orb"></div>
+    <div class="orb"></div>
+  </div>
+  <div class="hero-grid-overlay"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="status-dot"></span>
+        Available for projects
+      </div>
+      <h1>
+        Hi, I'm <span class="gradient-text">Alex Chen</span>
+        <span class="wave-emoji">👋</span>
+      </h1>
+      <p class="hero-title-line">Full-Stack Developer &amp; UI/UX Designer</p>
+      <p class="hero-description">
+        I craft premium digital experiences with clean code and elegant design. 
+        Specializing in modern web applications, from concept to deployment.
+      </p>
+      <div class="hero-cta">
+        <a href="#portfolio" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> View My Work
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <i class="fas fa-envelope"></i> Get In Touch
+        </a>
+      </div>
     </div>
 
-    <div class="container my-5 py-4">
-        <h2 class="text-center fw-bold mb-4"><i class="fa-solid fa-code text-primary me-2"></i>My Core Skills</h2>
-        <div class="text-center">
-            <span class="badge-skill"><i class="fa-brands fa-wordpress text-primary me-2"></i>WordPress & Elementor</span>
-            <span class="badge-skill"><i class="fa-brands fa-react text-info me-2"></i>React.js</span>
-            <span class="badge-skill"><i class="fa-brands fa-js text-warning me-2"></i>JavaScript</span>
-            <span class="badge-skill"><i class="fa-brands fa-html5 text-danger me-2"></i>HTML5 & CSS3</span>
-            <span class="badge-skill"><i class="fa-brands fa-shopify text-success me-2"></i>Shopify & Wix</span>
-            <span class="badge-skill"><i class="fa-solid fa-palette text-secondary me-2"></i>UI/UX & Graphic Design</span>
+    <div class="hero-image">
+      <div class="hero-avatar-wrapper">
+        <div class="hero-avatar-glow"></div>
+        <img
+          src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+          alt="Alex Chen"
+          class="hero-avatar"
+          loading="eager"
+        >
+        <div class="floating-icons">
+          <div class="floating-icon"><i class="fab fa-react"></i></div>
+          <div class="floating-icon"><i class="fab fa-js"></i></div>
+          <div class="floating-icon"><i class="fab fa-python"></i></div>
+          <div class="floating-icon"><i class="fab fa-node-js"></i></div>
+          <div class="floating-icon"><i class="fab fa-figma"></i></div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============================================
+     ABOUT SECTION
+     ============================================ -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">About Me</span>
+      <h2 class="section-title">Turning ideas into elegant solutions</h2>
+      <p class="section-subtitle">
+        Passionate about building products that make a difference, with over 6 years 
+        of experience in full-stack development.
+      </p>
     </div>
 
-    <div class="container my-5">
-        <h2 class="text-center fw-bold mb-5"><i class="fa-solid fa-briefcase text-primary me-2"></i>Featured Projects</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">E-Commerce Ecosystems</h5>
-                        <p class="card-text text-muted">Complete merchant onboarding, store design, and custom product uploads for international brands across multiple platforms.</p>
-                        <span class="badge bg-primary">Shopify / Amazon / Daraz</span>
-                    </div>
-                </div>
+    <div class="about-grid">
+      <div class="about-image-wrapper fade-in-left">
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=600&h=450&fit=crop"
+            alt="Workspace"
+            loading="lazy"
+          >
+        </div>
+        <div class="about-experience-badge">
+          <div class="number">6+</div>
+          <div class="label">Years Experience</div>
+        </div>
+      </div>
+
+      <div class="about-text fade-in-right">
+        <h3>Building the future, one line of code at a time</h3>
+        <p>
+          I'm a full-stack developer based in San Francisco, specializing in building 
+          high-performance web applications with modern technologies. My approach combines 
+          technical excellence with thoughtful design to create products that people love.
+        </p>
+        <p>
+          From startups to enterprise solutions, I've helped businesses transform their 
+          digital presence with clean, scalable code and intuitive user experiences.
+        </p>
+
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">120+</div>
+            <div class="stat-label">Projects Done</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">50+</div>
+            <div class="stat-label">Happy Clients</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Tech Stack</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="experience-row stagger-children">
+      <div class="exp-card">
+        <div class="exp-icon"><i class="fas fa-briefcase"></i></div>
+        <h4>Senior Full-Stack Developer</h4>
+        <div class="exp-company">TechCorp Inc. — 2022 - Present</div>
+        <p class="exp-desc">
+          Leading development of cloud-native applications serving 2M+ users. 
+          Architected microservices and improved performance by 40%.
+        </p>
+      </div>
+      <div class="exp-card">
+        <div class="exp-icon"><i class="fas fa-laptop-code"></i></div>
+        <h4>Full-Stack Developer</h4>
+        <div class="exp-company">StartupHub — 2019 - 2022</div>
+        <p class="exp-desc">
+          Built scalable SaaS platforms from ground up. Implemented CI/CD pipelines 
+          and automated testing achieving 95% code coverage.
+        </p>
+      </div>
+      <div class="exp-card">
+        <div class="exp-icon"><i class="fas fa-pen-fancy"></i></div>
+        <h4>Freelance Developer</h4>
+        <div class="exp-company">Self-Employed — 2017 - 2019</div>
+        <p class="exp-desc">
+          Delivered 50+ custom web solutions for diverse clients worldwide. 
+          Specialized in React, Node.js, and cloud deployments.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     SKILLS SECTION
+     ============================================ -->
+<section class="section skills" id="skills">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">Skills & Expertise</span>
+      <h2 class="section-title">My technical arsenal</h2>
+      <p class="section-subtitle">
+        A curated set of technologies I work with daily to deliver production-ready solutions.
+      </p>
+    </div>
+
+    <div class="skills-content">
+      <div class="fade-in-left">
+        <div class="skills-text">
+          <p>
+            I believe in mastering the tools of the trade. From frontend frameworks to 
+            cloud infrastructure, each technology is carefully chosen to solve specific 
+            challenges efficiently.
+          </p>
+        </div>
+
+        <div class="skill-category">
+          <h4><i class="fas fa-code"></i> Frontend</h4>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">React & Next.js</span>
+              <span class="skill-percent">95%</span>
             </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">Custom Web Development</h5>
-                        <p class="card-text text-muted">Building responsive websites from scratch using WordPress Elementor and front-end frameworks for sleek UI performance.</p>
-                        <span class="badge bg-success">WordPress / React</span>
-                    </div>
-                </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="95"></div>
             </div>
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h5 class="card-title fw-bold">UI/UX & Brand Identity</h5>
-                        <p class="card-text text-muted">Designing full desktop homepage mockups, modern animated logo reveals, and creative assets for tech and SaaS platforms.</p>
-                        <span class="badge bg-secondary">Graphic Design</span>
-                    </div>
-                </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">TypeScript</span>
+              <span class="skill-percent">90%</span>
             </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="90"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Vue.js / Angular</span>
+              <span class="skill-percent">80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="80"></div>
+            </div>
+          </div>
         </div>
+
+        <div class="skill-category">
+          <h4><i class="fas fa-server"></i> Backend</h4>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Node.js & Express</span>
+              <span class="skill-percent">92%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="92"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Python / Django</span>
+              <span class="skill-percent">85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">PostgreSQL / MongoDB</span>
+              <span class="skill-percent">88%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="88"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h4><i class="fas fa-cloud"></i> DevOps & Tools</h4>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">AWS / GCP</span>
+              <span class="skill-percent">82%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="82"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Docker & Kubernetes</span>
+              <span class="skill-percent">78%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-bar-fill" data-width="78"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-in-right">
+        <div class="tech-icons-grid stagger-children">
+          <div class="tech-icon-item">
+            <i class="fab fa-react" style="color: #61DAFB;"></i>
+            <span class="tech-label">React</span>
+          </div>
+          <div class="tech-icon-item">
+            <i class="fab fa-js" style="color: #F7DF1E;"></i>
+            <span class="tech-label">JavaScript</span>
+          </div>
+          <div class="tech-icon-item">
+            <i class="fab fa-python" style="color: #3776AB;"></i>
+            <span class="tech-label">Python</span>
+          </div>
+          <div class="tech-icon-item">
+            <i class="fab fa-node-js" style="color: #339933;"></i>
+            <span class="tech-label">Node.js</span>
+          </div>
+          <div class="tech-icon-item">
+            <i class="fab fa-html5" style="color: #E34F26;"></i>
+            <span class="tech-label">HTML5</span>
+          </div>
+          <div class="tech-icon-item">
+            <i class="fab fa-css3-alt" style="color: #1572B6;"></i>
+            <span class="tech-label">CSS3</span>
+          </div>
+          <div class="tech-icon-item">
+            <i class="fab fa-aws" style="color: #FF9900;"></i>
+            <span class="tech-label">AWS</span>
+          </div>
+          <div class="tech-icon-item">
+            <i class="fab fa-figma" style="color: #F24E1E;"></i>
+            <span class="tech-label">Figma</span>
+          </div>
+          <div class="tech-icon-item">
+            <i class="fab fa-git-alt" style="color: #F05032;"></i>
+            <span class="tech-label">Git</span>
+          </div>
+          <div class="tech-icon-item">
+            <i class="fab fa-docker" style="color: #2496ED;"></i>
+            <span class="tech-label">Docker</span>
+          </div>
+          <div class="tech-icon-item">
+            <i class="fab fa-sass" style="color: #CC6699;"></i>
+            <span class="tech-label">Sass</span>
+          </div>
+          <div class="tech-icon-item">
+            <i class="fab fa-vuejs" style="color: #4FC08D;"></i>
+            <span class="tech-label">Vue.js</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     PORTFOLIO SECTION
+     ============================================ -->
+<section class="section portfolio" id="portfolio">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">Portfolio</span>
+      <h2 class="section-title">Featured projects</h2>
+      <p class="section-subtitle">
+        A selection of projects I've built with passion, precision, and purpose.
+      </p>
     </div>
 
-    <div id="contact" class="container my-5 py-4 text-center">
-        <h2 class="fw-bold mb-3"><i class="fa-solid fa-envelope text-primary me-2"></i>Get In Touch</h2>
-        <p class="text-muted mb-4">Have a project in mind? Let's discuss details and build something amazing.</p>
-        <div class="d-flex justify-content-center gap-3">
-            <a href="https://github.com/ebayuk9900-jpg" target="_blank" class="btn btn-outline-dark"><i class="fa-brands fa-github me-2"></i>GitHub Profile</a>
-        </div>
+    <div class="filter-buttons fade-in-up">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Apps</button>
+      <button class="filter-btn" data-filter="mobile">Mobile</button>
+      <button class="filter-btn" data-filter="design">UI/UX Design</button>
+      <button class="filter-btn" data-filter="backend">Backend</button>
     </div>
 
-    <footer>
-        <div class="container text-center">
-            <p class="mb-0">&copy; 2026 Aqib Tariq. All Rights Reserved.</p>
+    <div class="project-grid stagger-children" id="projectGrid">
+      <!-- Project 1 -->
+      <div class="project-card" data-category="web" data-project="0">
+        <div class="project-card-image">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Project" loading="lazy">
+          <div class="project-card-overlay">
+            <a href="#" class="overlay-btn" onclick="openProject(0); return false;"><i class="fas fa-eye"></i></a>
+            <a href="#" class="overlay-btn" onclick="window.open('https://example.com', '_blank'); return false;"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="overlay-btn" onclick="window.open('https://github.com', '_blank'); return false;"><i class="fab fa-github"></i></a>
+          </div>
         </div>
-    </footer>
+        <div class="project-card-body">
+          <div class="project-tags">
+            <span class="project-tag">React</span>
+            <span class="project-tag">Node.js</span>
+            <span class="project-tag">MongoDB</span>
+          </div>
+          <h3>Analytics Dashboard</h3>
+          <p>Real-time analytics platform with interactive charts, data visualization, and team collaboration features.</p>
+        </div>
+      </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <!-- Project 2 -->
+      <div class="project-card" data-category="mobile" data-project="1">
+        <div class="project-card-image">
+          <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600&h=400&fit=crop" alt="Project" loading="lazy">
+          <div class="project-card-overlay">
+            <a href="#" class="overlay-btn" onclick="openProject(1); return false;"><i class="fas fa-eye"></i></a>
+            <a href="#" class="overlay-btn" onclick="window.open('https://example.com', '_blank'); return false;"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="overlay-btn" onclick="window.open('https://github.com', '_blank'); return false;"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-tags">
+            <span class="project-tag">React Native</span>
+            <span class="project-tag">Firebase</span>
+            <span class="project-tag">Stripe</span>
+          </div>
+          <h3>FitTrack Pro</h3>
+          <p>Cross-platform fitness tracking app with AI-powered workout recommendations and progress analytics.</p>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card" data-category="web" data-project="2">
+        <div class="project-card-image">
+          <img src="https://images.unsplash.com/photo-1563986768609-322da13575f2?w=600&h=400&fit=crop" alt="Project" loading="lazy">
+          <div class="project-card-overlay">
+            <a href="#" class="overlay-btn" onclick="openProject(2); return false;"><i class="fas fa-eye"></i></a>
+            <a href="#" class="overlay-btn" onclick="window.open('https://example.com', '_blank'); return false;"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="overlay-btn" onclick="window.open('https://github.com', '_blank'); return false;"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-tags">
+            <span class="project-tag">Next.js</span>
+            <span class="project-tag">TypeScript</span>
+            <span class="project-tag">PostgreSQL</span>
+          </div>
+          <h3>E-Commerce Platform</h3>
+          <p>Full-featured e-commerce solution with real-time inventory, multi-currency support, and admin dashboard.</p>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card" data-category="design" data-project="3">
+        <div class="project-card-image">
+          <img src="https://images.unsplash.com/photo-1581291518633-83b4ebd1d83e?w=600&h=400&fit=crop" alt="Project" loading="lazy">
+          <div class="project-card-overlay">
+            <a href="#" class="overlay-btn" onclick="openProject(3); return false;"><i class="fas fa-eye"></i></a>
+            <a href="#" class="overlay-btn" onclick="window.open('https://example.com', '_blank'); return false;"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="overlay-btn" onclick="window.open('https://github.com', '_blank'); return false;"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-tags">
+            <span class="project-tag">Figma</span>
+            <span class="project-tag">Prototyping</span>
+            <span class="project-tag">Design System</span>
+          </div>
+          <h3>FinTech App Design</h3>
+          <p>Complete UI/UX redesign for a fintech startup including design system, component library, and interactive prototypes.</p>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card" data-category="backend" data-project="4">
+        <div class="project-card-image">
+          <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop" alt="Project" loading="lazy">
+          <div class="project-card-overlay">
+            <a href="#" class="overlay-btn" onclick="openProject(4); return false;"><i class="fas fa-eye"></i></a>
+            <a href="#" class="overlay-btn" onclick="window.open('https://example.com', '_blank'); return false;"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="overlay-btn" onclick="window.open('https://github.com', '_blank'); return false;"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-tags">
+            <span class="project-tag">Python</span>
+            <span class="project-tag">FastAPI</span>
+            <span class="project-tag">Redis</span>
+          </div>
+          <h3>API Gateway</h3>
+          <p>High-performance API gateway with rate limiting, authentication, caching, and real-time monitoring.</p>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card" data-category="mobile" data-project="5">
+        <div class="project-card-image">
+          <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&h=400&fit=crop" alt="Project" loading="lazy">
+          <div class="project-card-overlay">
+            <a href="#" class="overlay-btn" onclick="openProject(5); return false;"><i class="fas fa-eye"></i></a>
+            <a href="#" class="overlay-btn" onclick="window.open('https://example.com', '_blank'); return false;"><i class="fas fa-external-link-alt"></i></a>
+            <a href="#" class="overlay-btn" onclick="window.open('https://github.com', '_blank'); return false;"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+        <div class="project-card-body">
+          <div class="project-tags">
+            <span class="project-tag">Flutter</span>
+            <span class="project-tag">Dart</span>
+            <span class="project-tag">GraphQL</span>
+          </div>
+          <h3>Social Connect</h3>
+          <p>Social networking app with real-time messaging, stories, and content sharing features built for scale.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     PROJECT DETAIL MODAL
+     ============================================ -->
+<div class="modal-overlay" id="projectModal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeProjectModal()"><i class="fas fa-times"></i></button>
+    <img src="" alt="Project" class="modal-image" id="modalImage">
+    <div class="modal-body">
+      <h2 id="modalTitle">Project Title</h2>
+      <p class="modal-subtitle" id="modalCategory">Category</p>
+      <p class="modal-description" id="modalDescription">
+        Project description goes here.
+      </p>
+      <div class="modal-features">
+        <h4>Key Features</h4>
+        <ul id="modalFeatures">
+          <li><i class="fas fa-check-circle"></i> Feature 1</li>
+          <li><i class="fas fa-check-circle"></i> Feature 2</li>
+          <li><i class="fas fa-check-circle"></i> Feature 3</li>
+        </ul>
+      </div>
+      <div class="modal-tech-stack" id="modalTechStack">
+        <span class="modal-tech-tag">React</span>
+        <span class="modal-tech-tag">Node.js</span>
+      </div>
+      <div class="modal-actions">
+        <a href="https://example.com" target="_blank" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+        <a href="https://github.com" target="_blank" class="btn btn-secondary btn-sm"><i class="fab fa-github"></i> View Code</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================
+     TESTIMONIALS SECTION
+     ============================================ -->
+<section class="section testimonials" id="testimonials">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">Testimonials</span>
+      <h2 class="section-title">What clients say</h2>
+      <p class="section-subtitle">
+        Trusted by startups and enterprises worldwide to deliver exceptional results.
+      </p>
+    </div>
+
+    <div class="testimonials-wrapper" style="overflow: hidden;">
+      <div class="testimonials-track" id="testimonialsTrack">
+        <div class="testimonial-card">
+          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="testimonial-text">
+            "Alex transformed our outdated platform into a modern, lightning-fast application. 
+            The attention to detail and quality of work exceeded our expectations. Highly recommend!"
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face" alt="Sarah Johnson">
+            <div>
+              <div class="author-name">Sarah Johnson</div>
+              <div class="author-role">CEO, TechStart Inc.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="testimonial-text">
+            "Working with Alex was an absolute pleasure. He understood our vision immediately 
+            and delivered a product that perfectly balanced aesthetics with functionality."
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=face" alt="Michael Torres">
+            <div>
+              <div class="author-name">Michael Torres</div>
+              <div class="author-role">CTO, CloudScale</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="testimonial-text">
+            "The best developer we've worked with. Clean code, excellent communication, and 
+            always delivered ahead of schedule. A true professional."
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face" alt="Emily Chen">
+            <div>
+              <div class="author-name">Emily Chen</div>
+              <div class="author-role">Product Manager, DataFlow</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="testimonial-text">
+            "Alex's expertise in full-stack development helped us launch our MVP in record time. 
+            His system architecture choices saved us thousands in infrastructure costs."
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face" alt="David Park">
+            <div>
+              <div class="author-name">David Park</div>
+              <div class="author-role">Founder, SaaS Labs</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="testimonial-text">
+            "Exceptional UI/UX work! Alex redesigned our entire platform and user engagement 
+            increased by 60%. The design is both beautiful and intuitive."
+          </p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&h=100&fit=crop&crop=face" alt="Lisa Wang">
+            <div>
+              <div class="author-name">Lisa Wang</div>
+              <div class="author-role">Design Director, PixelPerfect</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="slider-controls">
+      <button class="slider-btn" onclick="slideTestimonials(-1)"><i class="fas fa-chevron-left"></i></button>
+      <div class="slider-dots" id="sliderDots">
+        <button class="slider-dot active" onclick="goToTestimonial(0)"></button>
+        <button class="slider-dot" onclick="goToTestimonial(1)"></button>
+        <button class="slider-dot" onclick="goToTestimonial(2)"></button>
+        <button class="slider-dot" onclick="goToTestimonial(3)"></button>
+        <button class="slider-dot" onclick="goToTestimonial(4)"></button>
+      </div>
+      <button class="slider-btn" onclick="slideTestimonials(1)"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     CONTACT SECTION
+     ============================================ -->
+<section class="section contact" id="contact">
+  <div class="container">
+    <div class="section-header fade-in-up">
+      <span class="section-label">Get In Touch</span>
+      <h2 class="section-title">Let's build something amazing</h2>
+      <p class="section-subtitle">
+        Have a project in mind? I'd love to hear about it. Let's discuss how we can work together.
+      </p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info fade-in-left">
+        <h3>Contact Information</h3>
+        <p>
+          Feel free to reach out for collaboration, freelance projects, 
+          or just a friendly chat about technology.
+        </p>
+
+        <div class="contact-cards">
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-detail-label">Email</div>
+              <div class="contact-detail">alex@example.com</div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-detail-label">Location</div>
+              <div class="contact-detail">San Francisco, CA</div>
+            </div>
+          </div>
+          <div class="contact-card">
+            <div class="contact-icon"><i class="fas fa-phone-alt"></i></div>
+            <div>
+              <div class="contact-detail-label">Phone</div>
+              <div class="contact-detail">+1 (555) 123-4567</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://twitter.com" target="_blank" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://dribbble.com" target="_blank" class="social-link" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+          <a href="https://figma.com" target="_blank" class="social-link" aria-label="Figma"><i class="fab fa-figma"></i></a>
+        </div>
+      </div>
+
+      <form class="contact-form fade-in-right" id="contactForm" onsubmit="handleContactSubmit(event)">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="formName">Your Name</label>
+            <input type="text" id="formName" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label for="formEmail">Your Email</label>
+            <input type="email" id="formEmail" placeholder="john@example.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="formSubject">Subject</label>
+          <input type="text" id="formSubject" placeholder="Project Collaboration" required>
+        </div>
+        <div class="form-group">
+          <label for="formMessage">Message</label>
+          <textarea id="formMessage" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="submit-btn">
+          <i class="fas fa-paper-plane"></i> Send Message
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================
+     FOOTER
+     ============================================ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">Alex<span class="logo-dot"></span>Chen</a>
+        <p>
+          Crafting premium digital experiences with clean code and elegant design. 
+          Available for freelance projects and collaborations.
+        </p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="#">Web Development</a></li>
+          <li><a href="#">Mobile Apps</a></li>
+          <li><a href="#">UI/UX Design</a></li>
+          <li><a href="#">Consulting</a></li>
+          <li><a href="#">Cloud Solutions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:alex@example.com">alex@example.com</a></li>
+          <li><a href="tel:+15551234567">+1 (555) 123-4567</a></li>
+          <li><a href="https://github.com" target="_blank">GitHub</a></li>
+          <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+          <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Alex Chen. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Cookie Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
